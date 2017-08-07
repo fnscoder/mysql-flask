@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Funcionários</h1>
+    <hr>
+    <form action="{{ url_for('cadastro') }}" method="POST">
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" name="nome"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Cadastrar">
+        <a href="/">Voltar</a>
+    </form>
+</body>
+</html>

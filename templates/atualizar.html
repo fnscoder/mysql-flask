@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atualizar</title>
+</head>
+<body>
+    <h1>Atualização de Cadastro de Funcionário</h1>
+    <hr>
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td>Nome</td>
+                <td><input type="text" name="nome" value="{{ funcionario.nome }}"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="text" name="email" value="{{ funcionario.email }}"></td>
+            </tr>
+        </table><br>
+        <input type="submit" value="Atualizar">
+        <a href="/">Voltar</a>
+    </form>
+</body>
+</html>

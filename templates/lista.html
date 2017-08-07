@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Funcionários</title>
+</head>
+<body>
+    <h1>Lista de Funcionários</h1>
+    <hr>
+    <table border=4>
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>E-mail</td>
+            <td>Excluir</td>
+            <td>Atualizar</td>
+        </tr>
+        {% for funcionario in funcionarios %}
+            <tr>
+                <td>{{ funcionario._id }}</td>
+                <td>{{ funcionario.nome }}</td>
+                <td>{{ funcionario.email }}</td>
+                <td><a href="/excluir/{{ funcionario._id }}">Excluir</a></td>
+                <td><a href="/atualizar/{{ funcionario._id }}">Atualizar</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <a href="/">Voltar</a>
+</body>
+</html>
